@@ -1,4 +1,9 @@
 
+0.2.4 / 2016-04-01
+==================
+
+ * index: fall back to require('component-*') for node compat
+
 0.2.3 / 2014-08-01
 ==================
 
