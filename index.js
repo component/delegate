@@ -2,8 +2,17 @@
  * Module dependencies.
  */
 
-var closest = require('closest')
-  , event = require('event');
+try {
+  var closest = require('closest');
+} catch(err) {
+  var closest = require('component-closest');
+}
+
+try {
+  var event = require('event');
+} catch(err) {
+  var event = require('component-event');
+}
 
 /**
  * Delegate event `type` to `selector`
